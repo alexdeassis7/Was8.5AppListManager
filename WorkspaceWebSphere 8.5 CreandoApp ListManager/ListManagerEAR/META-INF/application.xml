@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="6" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd">
+ <display-name>ListManagerEAR</display-name>
+ <module id="Module_1547181026459">
+ 	<web>
+ 		<web-uri>ListManagerDynamicWebProject.war</web-uri>
+ 		<context-root>ListManagerDynamicWebProject</context-root>
+ 	</web>
+ </module>
+ <module id="Module_1547181530285">
+ 	<web>
+ 		<web-uri>ListManagerWebServiceDynamicWebProject.war</web-uri>
+ 		<context-root>ListManagerWebServiceDynamicWebProject</context-root>
+ 	</web>
+ </module> 
+ </application> 

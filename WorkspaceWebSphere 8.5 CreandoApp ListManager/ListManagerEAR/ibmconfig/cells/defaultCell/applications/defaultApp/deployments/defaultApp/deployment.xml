@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0"
+	xmlns:xmi="http://www.omg.org/XMI"
+	xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi"
+	xmi:id="Deployment_1548635294909">
+	<deployedObject
+		xmi:type="appdeployment:ApplicationDeployment"
+		xmi:id="ApplicationDeployment_1548635294909" deploymentId="0"
+		startingWeight="1"
+		binariesURL="C:/WorkspaceWebSphere 8.5 CreandoApp ListManager/ListManagerEAR"
+		useMetadataFromBinaries="true" enableDistribution="false"
+		createMBeansForResources="true" reloadEnabled="false"
+		appContextIDForSecurity="href:W7CTSDeassisaNode01Cell/ListManagerEAR"
+		filePermission=".*\.dll=755#.*\.so=755#.*\.a=755#.*\.sl=755"
+		allowDispatchRemoteInclude="false" allowServiceRemoteInclude="false"
+		asyncRequestDispatchType="DISABLED" standaloneModule="false"
+		enableClientModule="false">
+		<targetMappings
+			xmi:id="DeploymentTargetMapping_1548635294909" enable="true"
+			target="ServerTarget_1548635294909" />
+		<classloader xmi:id="Classloader_1548635294909"
+			mode="PARENT_LAST" />
+		<modules xmi:type="appdeployment:WebModuleDeployment"
+			xmi:id="WebModuleDeployment_1548635294909" deploymentId="1"
+			startingWeight="10000" uri="ListManagerDynamicWebProject.war"
+			containsEJBContent="0">
+			<targetMappings
+				xmi:id="DeploymentTargetMapping_1548635294910"
+				target="ServerTarget_1548635294909" />
+			<classloader xmi:id="Classloader_1548635294910" />
+		</modules>
+		<modules xmi:type="appdeployment:WebModuleDeployment"
+			xmi:id="WebModuleDeployment_1548635294910" deploymentId="1"
+			startingWeight="10000"
+			uri="ListManagerWebServiceDynamicWebProject.war"
+			containsEJBContent="0">
+			<targetMappings
+				xmi:id="DeploymentTargetMapping_1548635294911"
+				target="ServerTarget_1548635294909" />
+			<classloader xmi:id="Classloader_1548635294911" />
+		</modules>
+		<properties xmi:id="Property_1548635294909"
+			name="was.loose.config"
+			value="file:/C:/WorkspaceWebSphere%208.5%20CreandoApp%20ListManager/.metadata/.plugins/com.ibm.etools.wrd.websphere.v85/looseconfigurations/WebSphereApplicationServertraditionalV8.5atlocalhost/ListManagerEAR/looseconfig.xmi" />
+		<properties xmi:id="Property_1548635294910"
+			name="metadata.complete" value="false" />
+	</deployedObject>
+	<deploymentTargets
+		xmi:type="appdeployment:ServerTarget"
+		xmi:id="ServerTarget_1548635294909" name="server1"
+		nodeName="W7CTSDeassisaNode01" />
+</appdeployment:Deployment>
