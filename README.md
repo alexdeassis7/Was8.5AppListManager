@@ -1,7 +1,7 @@
 # Was8.5AppListManager
 Ear content:
 
-Utility project:Data Acces 
+Utility project:Data Access
 
 Web Dynamic Project 1 :JavaServerFaces FrontEnd
 
